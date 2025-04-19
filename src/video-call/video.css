@@ -1,0 +1,23 @@
+.video-call-container {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+  }
+  
+  .video-box {
+    width: 300px;
+    height: 200px;
+    background: #000;
+    border-radius: 10px;
+  }
+  
+  .start-call-btn, .video-call-btn {
+    margin: 10px;
+    padding: 6px 12px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
