@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Base_URL } from "../Config";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
@@ -28,7 +29,7 @@ const Login = () => {
       setError(""); // Reset any previous errors
       setSuccess(""); // Reset any previous success messages
   
-      const res = await axios.post("http://localhost:4000/login", formData);
+      const res = await axios.post(`${Base_URL}/login`, formData);
       const { token, user } = res.data;
   
       // Save token and user info to localStorage
